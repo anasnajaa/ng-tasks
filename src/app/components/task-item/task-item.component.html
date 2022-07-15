@@ -1,0 +1,7 @@
+<a href="#" class="list-group-item list-group-item-action" aria-current="true">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">{{task.text}}</h5>
+    <small><button (click)="markCompleted()" class="btn btn-outline-dark btn-sm"> <small><fa-icon [icon]="faTimes"></fa-icon></small> </button></small>
+  </div>
+  <small>{{task.dateCreated.getDate()}}/{{task.dateCreated.getMonth()}}/{{task.dateCreated.getFullYear()}}</small>
+</a>
